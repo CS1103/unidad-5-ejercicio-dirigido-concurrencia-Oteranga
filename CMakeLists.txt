@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.13.4)
 project(pd4)
 
 set( CMAKE_VERBOSE_MAKEFILE on)
@@ -11,4 +11,4 @@ else()
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wpedantic -Wextra")
 endif()
 
-add_executable(pd4 main.cpp)
+add_executable(pd4 main.cpp main.cpp matriz.h lectura.cpp)

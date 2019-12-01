@@ -1,6 +1,14 @@
+#include <fstream>
 #include <iostream>
+#include <thread>
+#include "matriz.h"
+#include "lectura.cpp"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    ifstream f;
+    f.open("ejemplo1.txt");
+    leer(f);
     return 0;
 }
